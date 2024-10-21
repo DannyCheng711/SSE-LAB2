@@ -7,8 +7,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install dependecies
-        run: pip install -r ci-requirements.txt 
+        run: pip install -r requirements.txt 
+  
   python-formatting:
+    needs: python-install-dependency
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
