@@ -10,7 +10,7 @@ jobs:
   #      run: pip install -r requirements.txt 
   
   python-formatting:
-    needs: python-install-dependency
+    # needs: python-install-dependency
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
