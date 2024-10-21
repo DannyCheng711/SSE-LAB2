@@ -26,5 +26,5 @@ jobs:
         uses: /impaas/impaas-deploy@v3
         with:
           app-name: cc2224-sse-app
-        deployment-token: ${{ secrets.IMPAAS_DEPLOY_TOKEN }}
-        method: PLATFORM
+          deployment-token: ${{ secrets.IMPAAS_DEPLOY_TOKEN }}
+          method: PLATFORM
