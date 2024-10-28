@@ -47,6 +47,15 @@ def process_query(q):
             result = num1 + num2
             return f"{result}"
 
+        if len(numbers) == 3:
+            num1, num2, num3 = (
+                int(numbers[0]),
+                int(numbers[1]),
+                int(numbers[2]),
+            )
+            result = num1 + num2 + num3
+            return f"{result}"
+
     elif "largest" in q:
 
         numbers = re.findall(r"\d+(?:\.\d+)*", q)

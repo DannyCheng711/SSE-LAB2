@@ -22,6 +22,10 @@ def test_plus():
     assert process_query("What is 67 plus 86?") == "153"
 
 
+def test_3plus():
+    assert process_query("What is 12 plus 62 plus 27?") == "101"
+
+
 def test_largest():
     assert (
         process_query(
