@@ -68,8 +68,7 @@ def process_query(q):
             if root**6 == num:
                 valid_numbers.append(num_str)
         return (
-            ", ".join(valid_numbers) 
-            if valid_numbers else "No numbers found"
+            ", ".join(valid_numbers) if valid_numbers else "No numbers found"
         )
 
     else:
