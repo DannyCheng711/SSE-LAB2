@@ -30,5 +30,6 @@ def test_largest():
         == "96"
     )
 
+
 def test_multiplied():
     assert process_query("What is 26 multiplied by 72?") == "1872"
