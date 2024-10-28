@@ -57,6 +57,20 @@ def process_query(q):
             result = num1 * num2
             return f"{result}"
 
+    elif "both a square and a cube" in q:
+        # 匹配并检查数字列表
+        numbers = re.findall(r"\d+", q)
+        valid_numbers = []
+        for num_str in numbers:
+            num = int(num_str)
+            # 检查是否是完全六次方数
+            root = round(num ** (1 / 6))
+            if root**6 == num:
+                valid_numbers.append(num_str)
+        return (
+            ", ".join(valid_numbers) if valid_numbers else "No numbers found"
+        )
+
     else:
         return "Unknown"
 

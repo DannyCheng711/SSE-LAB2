@@ -33,3 +33,12 @@ def test_largest():
 
 def test_multiplied():
     assert process_query("What is 26 multiplied by 72?") == "1872"
+
+
+def test_square_cube():
+    assert (
+        process_query(
+            "Which of the following numbers is both a square and a cube: 4100, 3005, 2303, 9, 343, 64, 3345?"
+        )
+        == "64"
+    )
