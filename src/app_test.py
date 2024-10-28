@@ -38,7 +38,7 @@ def test_multiplied():
 def test_square_cube():
     assert (
         process_query(
-            "is both a square and a cube: 3329, 64, 1, 65, 1972, 1000, 2712, 80??"
+            "both a square and a cube: 3329, 64, 1, 65, 1972, 1000, 2712, 80??"
         )
         == "1, 64"
     )
