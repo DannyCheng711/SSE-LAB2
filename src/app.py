@@ -118,6 +118,13 @@ def process_query(q):
             result = int(numbers[0]) - int(numbers[1])
             return str(result)
 
+    elif "to the power of" in q:
+        numbers = re.findall(r"\d+", q)
+        if len(numbers) == 2:
+            base, exponent = int(numbers[0]), int(numbers[1])
+            result = base**exponent
+        return str(result)
+
     else:
         return "Unknown"
 

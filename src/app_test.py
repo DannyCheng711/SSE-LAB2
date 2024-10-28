@@ -35,6 +35,13 @@ def test_largest():
     )
 
 
+def test_power():
+    assert (
+        process_query("What is 88 to the power of 25?")
+        == "4093236175904463085683654411954642528654818541568"
+    )
+
+
 def test_multiplied():
     assert process_query("What is 26 multiplied by 72?") == "1872"
 
