@@ -20,3 +20,7 @@ def test_my_name():
 
 def test_plus():
     assert process_query("What is 67 plus 86?") == "153"
+
+
+def test_largest():
+    assert process_query("Which of the following numbers is the largest: 96, 93, 37?") == "96"
