@@ -17,6 +17,9 @@ def submit():
 
 
 def process_query(q):
+    if q == "What is your name?":
+        return "Computing genius"
+
     if q == "dinosaurs":
         return "Dinosaurs ruled the Earth 200 million years ago"
     else:
