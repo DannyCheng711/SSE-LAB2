@@ -24,13 +24,12 @@ def process_query(q):
     elif q == "dinosaurs":
         return "Dinosaurs ruled the Earth 200 million years ago"
 
-    elif "plus" in q:  
-        numbers = re.findall(r'\d+', q)         
-        if len(numbers) == 2:         
-            num1, num2 = int(numbers[0]), int(numbers[1])            
-            result = num1 + num2          
+    elif "plus" in q:
+        numbers = re.findall(r"\d+", q)
+        if len(numbers) == 2:
+            num1, num2 = int(numbers[0]), int(numbers[1])
+            result = num1 + num2
             return f"{result}"
-    
 
     else:
         return "Unknown"
