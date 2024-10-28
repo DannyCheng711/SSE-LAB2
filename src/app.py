@@ -22,6 +22,21 @@ def process_query(q):
 
     elif q == "dinosaurs":
         return "Dinosaurs ruled the Earth 200 million years ago"
+    
+    elif "plus" in q:
+        words = q.split()
+        sum = 0
+        for i in words:
+            if i.isdigit():
+                sum += i
+        return str(sum)
+
+        
+
+
+
+
+
     else:
         return "Unknown"
 
