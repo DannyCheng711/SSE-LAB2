@@ -42,3 +42,16 @@ def test_square_cube():
         )
         == "1, 64"
     )
+
+
+def test_prime():
+    assert (
+        process_query(
+            "Which of the following numbers are primes: 31, 65, 2, 27, 88?"
+        )
+        == "2, 31"
+    )
+
+
+def test_minus():
+    assert process_query("What is 66 minus 5?") == "61"
