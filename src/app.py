@@ -50,6 +50,13 @@ def process_query(q):
                 else str(max_value)
             )
 
+    elif "multiplied" in q:
+        numbers = re.findall(r"\d+", q)
+        if len(numbers) == 2:
+            num1, num2 = int(numbers[0]), int(numbers[1])
+            result = num1 * num2
+            return f"{result}"
+
     else:
         return "Unknown"
 
