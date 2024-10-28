@@ -60,6 +60,9 @@ def process_query(q):
     elif "both a square and a cube" in q:
         # 匹配并检查数字列表
         numbers = re.findall(r"\d+", q)
+
+        sorted(numbers)
+
         valid_numbers = []
         for num_str in numbers:
             num = int(num_str)
