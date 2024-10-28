@@ -39,13 +39,16 @@ def process_query(q):
         if numbers:
             max_value = None
             for num in numbers:
-                sub_values = [float(part) for part in num.split('.')]
+                sub_values = [float(part) for part in num.split(".")]
                 largest_sub_value = max(sub_values)
-                
+
                 if max_value is None or largest_sub_value > max_value:
                     max_value = largest_sub_value
-            return str(int(max_value)) if max_value.is_integer() else str(max_value)
-        
+            return (
+                str(int(max_value))
+                if max_value.is_integer()
+                else str(max_value)
+            )
 
     else:
         return "Unknown"
@@ -58,4 +61,3 @@ def query():
     response = process_query(q)
 
     return response
-
