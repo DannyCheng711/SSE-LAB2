@@ -20,4 +20,3 @@ def test_my_name():
 
 def test_plus():
     assert process_query("What is 67 plus 86?") == "153"
-
